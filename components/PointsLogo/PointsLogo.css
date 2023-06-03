@@ -1,0 +1,8 @@
+#points-logo {
+  height: 50vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
