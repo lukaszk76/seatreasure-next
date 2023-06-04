@@ -23,7 +23,6 @@ export default class Sketch {
     this.count = this.size * this.size
     this.container = options.dom
     this.scene = new THREE.Scene()
-
     this.width = this.container.offsetWidth
     this.height = this.container.offsetHeight
 
@@ -58,10 +57,24 @@ export default class Sketch {
       this.addObjects()
       this.setupFBO()
       this.addProgressAnimation()
+      this.addDarkMode()
       this.render()
     })
   }
 
+  setMode(mode) {
+    console.log(mode)
+    this.material.uniforms.uThemeLight.value = mode === "light" ? 1 : 0
+  }
+  addDarkMode() {
+    this.setMode("light")
+    window.addEventListener("dark", () => {
+      this.setMode("dark")
+    })
+    window.addEventListener("light", () => {
+      this.setMode("light")
+    })
+  }
   addProgressAnimation() {
     const button = document.getElementById("points-logo-button")
     button.addEventListener("mouseenter", () => {
@@ -104,12 +117,12 @@ export default class Sketch {
       for (let j = 0; j < this.size; j++) {
         const index = i * this.size + j
         let randomPixel = pixels[Math.floor(Math.random() * pixels.length)]
-        if (Math.random() < 0.05) {
-          randomPixel = {
-            x: 3 * (Math.random() - 0.5),
-            y: 3 * (Math.random() - 0.5),
-          }
-        }
+        // if (Math.random() < 0.05) {
+        //   randomPixel = {
+        //     x: 3 * (Math.random() - 0.5),
+        //     y: 3 * (Math.random() - 0.5),
+        //   }
+        // }
         data[index * 4] = randomPixel.x + (Math.random() - 0.5) * 0.01
         data[index * 4 + 1] = randomPixel.y + (Math.random() - 0.5) * 0.01
         data[index * 4 + 2] = (Math.random() - 0.5) * 0.01
@@ -170,6 +183,7 @@ export default class Sketch {
       uniforms: {
         time: { value: 0 },
         // uTexture: { value: new THREE.TextureLoader().load(testTexture) },
+        uThemeLight: { value: 0 },
         uTexture: { value: null },
         uImage: { value: new THREE.TextureLoader().load("/seatreasure.png") },
       },

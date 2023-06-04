@@ -1,0 +1,20 @@
+#webgl,
+#video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  -webkit-mask-image: url("/maska.png");
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("/maska.png");
+  mask-position: center;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+
+#video {
+  opacity: 0;
+}
