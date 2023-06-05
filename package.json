@@ -14,8 +14,8 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
-    "@lottiefiles/lottie-player": "^1.7.1",
     "@radix-ui/react-slot": "^1.0.2",
+    "@studio-freight/react-lenis": "^0.0.20",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "gsap": "^3.11.5",

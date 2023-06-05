@@ -63,7 +63,6 @@ export default class Sketch {
   }
 
   setMode(mode) {
-    console.log(mode)
     this.material.uniforms.uThemeLight.value = mode === "light" ? 1 : 0
   }
   addDarkMode() {

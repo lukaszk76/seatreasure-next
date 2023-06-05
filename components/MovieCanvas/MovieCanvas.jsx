@@ -17,6 +17,7 @@ export const MovieCanvas = memo(() => {
         start: "top 0%",
         end: "bottom 0%",
         scrub: true,
+        pin: true,
       },
       xPercent: 100,
     })
