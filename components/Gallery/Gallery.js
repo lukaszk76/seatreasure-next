@@ -20,6 +20,7 @@ export class Sketch {
     this.app = new Application({ resizeTo: window, backgroundAlpha: 0 })
     document.getElementById("render-point").appendChild(this.app.view)
     this.stage = new Container()
+    this.stage.sortableChildren = true
     this.app.stage.addChild(this.stage)
 
     const textures = [
@@ -61,8 +62,6 @@ export class Sketch {
     const cover = fit(maskSize, targetSize)
     this.displacementSprite.scale.set(cover.scale, cover.scale)
     this.displacementSprite.position.set(cover.left, cover.top)
-    // this.displacementSprite.texture.baseTexture.wrapMode = 1
-    // this.displacementSprite.texture.baseTexture.scaleMode = 1
 
     this.app.stage.addChild(this.displacementSprite)
 
@@ -93,6 +92,10 @@ export class Sketch {
     })
   }
 
+  onClick(e) {
+    const element = e.currentTarget
+  }
+
   addImage(img, index) {
     const sprite = new Sprite(Texture.from(img))
 
@@ -101,10 +104,12 @@ export class Sketch {
       sprite.texture.orig.width / 2,
       sprite.texture.orig.height / 2
     )
+    sprite.zIndex = 0
 
     const mask = new Sprite(Texture.WHITE)
     mask.width = this.width
     mask.height = this.height
+    mask.zIndex = 0
 
     const image = {
       w: sprite.texture.orig.width,
@@ -117,11 +122,13 @@ export class Sketch {
 
     container.x = index * (this.margin + this.width)
     container.y = this.margin
+    container.zIndex = 0
 
     const spriteContainer = new Container()
 
     spriteContainer.position.set(cover.left, cover.top)
     spriteContainer.scale.set(cover.scale)
+    spriteContainer.zIndex = 0
 
     container.addChild(mask)
     sprite.mask = mask
@@ -134,6 +141,7 @@ export class Sketch {
     container.buttonMode = true
     container.on("mouseover", this.onMouseOver)
     container.on("mouseout", this.onMouseOut)
+    container.on("click", this.onClick)
   }
 
   onMouseOver(e) {
@@ -170,7 +178,7 @@ export class Sketch {
       const delta = this.scroll - this.prevScroll
       this.prevScroll = this.scroll
 
-      this.displacementFilter.scale.x = -1.5 * delta
+      this.displacementFilter.scale.x = -2 * delta
 
       this.thumbs.forEach((thumb) => {
         thumb.x = this.calcPosition(delta, thumb.x)

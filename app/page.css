@@ -11,4 +11,16 @@ body {
 
 #render-point {
   margin-bottom: 100vh;
+  position: relative;
+}
+
+#renderer-title-h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  color: white;
+  font-size: 5rem;
+  -webkit-text-stroke: 1px black;
 }

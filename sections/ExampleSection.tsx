@@ -49,7 +49,14 @@ export const ExampleSection = memo(() => {
           SeaTreasure w Egipcie!
         </p>
       </div>
-      <div id="render-point"></div>
+      <div id="render-point">
+        <h2
+          id="renderer-title-h2"
+          className="scroll-m-20 text-4xl font-extrabold tracking-tight md:text-4xl"
+        >
+          Sea Treasure
+        </h2>
+      </div>
     </section>
   )
 })

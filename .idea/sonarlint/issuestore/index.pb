@@ -43,8 +43,6 @@ e
 5components/PointsLogo/shaders/fragmentSimulation.glsl,5/a/5af6f4ee4917f862b3392f527283763e20207958
 ?
 public/next.svg,0/f/0f0d3de08f3cde5481ae7a36082cdc12c93b0f89
-B
-tailwind.config.js,0/9/0918cbb76f2c44f223706cec9d31a32cd1177ce4
 <
 lib/fonts.ts,5/9/59c79f2736920427a0ffa6235237cd002db4f6f5
 L
@@ -59,8 +57,6 @@ D
 public/logo.svg,2/e/2ef8c18f4ecd42ee758cd134671b1d92eee8a6aa
 K
 components/theme-toggle.tsx,c/8/c8abfcf37520179ccd5216a669f850af617c2b1f
-U
-%components/MovieCanvas/ThreeJSCode.js,c/6/c6a1043c043a433ded2f08efc59a413e619dbccf
 W
 'components/MovieCanvas/glsl/vertex.glsl,b/6/b64d881ee415b1c4e1a037e74ce68c479c842bda
 L
@@ -68,15 +64,21 @@ L
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-B
-styles/globals.css,8/c/8c258232cbcd5d83991c524a9e86c8d3f984fc57
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 G
 components/main-nav.tsx,4/e/4eb1af970b0a18a6115c1f86ab121867e3894861
 J
 components/site-header.tsx,3/1/31d3a76b09984aa1d76fc172922806e5c088d4ed
 T
 $components/PointsLogo/PointsLogo.css,8/7/877b1cd7af702e478fe1c93d17a888a4dca00969
-T
-$components/PointsLogo/PointsLogo.jsx,d/3/d36a9c4071ff40e06b8794bd1b246aedbdc280e9
+>
+app/layout.tsx,e/e/ee80c90a95b380fdaa8bc6ba2190fbb3fdc30bb0
+<
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
+D
+app/gallery/page.tsx,4/a/4a0e8cd14616560d7d3357c8ccd38bec07b22c7c
+<
+app/page.tsx,6/f/6f76c4f4dad83442e836edc16c9735cb7bb32a73
+>
+config/site.ts,e/3/e3817dda748e6b5b328347939adbbb640ddb0505
+_
+/components/PointsLogo/shaders/vertexShader.glsl,7/e/7e6e6bd91c67c77399f4d01c4b051c5a5cedd0ef

@@ -215,8 +215,8 @@ export default class Sketch {
     window.requestAnimationFrame(this.render.bind(this))
   }
   resize() {
-    this.width = this.stage.offsetWidth
-    this.height = this.stage.offsetHeight
+    this.width = this.container.offsetWidth
+    this.height = this.container.offsetHeight
     this.renderer.setSize(this.width, this.height)
     this.camera.aspect = this.width / this.height
 
