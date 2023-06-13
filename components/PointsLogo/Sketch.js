@@ -40,9 +40,6 @@ export default class Sketch {
     this.container.appendChild(this.renderer.domElement)
     this.raycster = new THREE.Raycaster()
     this.pointer = new THREE.Vector2()
-
-    // this.setupSettings();
-    // this.controls = new OrbitControls(this.camera, this.renderer.domElement);
   }
 
   startAnimation() {
@@ -116,12 +113,7 @@ export default class Sketch {
       for (let j = 0; j < this.size; j++) {
         const index = i * this.size + j
         let randomPixel = pixels[Math.floor(Math.random() * pixels.length)]
-        // if (Math.random() < 0.05) {
-        //   randomPixel = {
-        //     x: 3 * (Math.random() - 0.5),
-        //     y: 3 * (Math.random() - 0.5),
-        //   }
-        // }
+
         data[index * 4] = randomPixel.x + (Math.random() - 0.5) * 0.01
         data[index * 4 + 1] = randomPixel.y + (Math.random() - 0.5) * 0.01
         data[index * 4 + 2] = (Math.random() - 0.5) * 0.01
@@ -223,8 +215,8 @@ export default class Sketch {
     window.requestAnimationFrame(this.render.bind(this))
   }
   resize() {
-    this.width = this.container.offsetWidth
-    this.height = this.container.offsetHeight
+    this.width = this.stage.offsetWidth
+    this.height = this.stage.offsetHeight
     this.renderer.setSize(this.width, this.height)
     this.camera.aspect = this.width / this.height
 

@@ -1,13 +1,22 @@
-import React, { memo } from "react"
+"use client"
+
+import React, { memo, useLayoutEffect } from "react"
+
+import { Sketch } from "@/components/Gallery/Gallery"
 
 export const ExampleSection = memo(() => {
+  useLayoutEffect(() => {
+    new Sketch()
+  }, [])
+
   return (
     <section className="grid max-w-[980px] items-center gap-6 pb-8 pt-6  md:py-10">
-      <div className="flex h-[100vh] flex-col items-start gap-4">
+      <div className="flex h-[100vh] max-w-[980px] flex-col items-start gap-4">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-3xl">
           Przygotuj się na niezapomniane safari nurkowe w Egipcie z SeaTreasure
           - Twoim przewodnikiem po tajemnicach podwodnego świata!
         </h2>
+
         <p className="text-lg font-medium leading-relaxed tracking-tight text-muted-foreground md:text-xl">
           Zanurz się w fascynujący świat raf koralowych i tętniącego życiem
           morza Czerwonego. SeaTreasure to doświadczenie, które przeniesie Cię w
@@ -40,6 +49,7 @@ export const ExampleSection = memo(() => {
           SeaTreasure w Egipcie!
         </p>
       </div>
+      <div id="render-point"></div>
     </section>
   )
 })

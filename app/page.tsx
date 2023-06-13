@@ -1,13 +1,29 @@
-import React from "react"
+"use client"
+
+import React, { useLayoutEffect } from "react"
 import Link from "next/link"
 import { ExampleSection } from "@/sections/ExampleSection"
+import Lenis from "@studio-freight/lenis"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 import { MovieCanvas } from "@/components/MovieCanvas/MovieCanvas"
 import { PointsLogo } from "@/components/PointsLogo/PointsLogo"
 
+import "./page.css"
+
 export default function IndexPage() {
+  useLayoutEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time: number) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  }, [])
+
   return (
     <div className="container">
       <section className="grid items-center gap-6 pb-8 pt-6 md:py-10">

@@ -1,16 +1,6 @@
 
-B
-prettier.config.js,5/5/5545147ddef8ba341e646ddc20c3d3d456b3fe04
 <
 lib/utils.ts,a/8/a85a9c0c67fa0e2a77f6d0f1448fb126c61bbc18
-H
-.next/server/app/page.js,6/a/6ac6ae22bc13acb183dd52f3dc228a929fabc926
-A
-postcss.config.js,3/f/3f70684581fd16ab3be77ca959e0138ef3ee8bfb
-?
-dist/index.html,8/3/83c3885e754cb61b14e68e2ab17c1c37c43a2f3f
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 D
 tsconfig.tsbuildinfo,f/2/f24b3455f0e88290fdcce8adc97a0e51cdb031fd
 =
@@ -28,25 +18,15 @@ Q.idea/sonarlint/securityhotspotstore/6/1/61ebb9fd6e8cf9082658121d5d81e297791dac
 J
 .idea/jsLinters/eslint.xml,e/b/eb1f02ca8ef3d0da59c956a13898780dee950d48
 
-Q.idea/sonarlint/securityhotspotstore/6/a/6ac6ae22bc13acb183dd52f3dc228a929fabc926,4/b/4b659d661adee2757570127e22aee3586b504376
-
-Q.idea/sonarlint/securityhotspotstore/8/3/83c3885e754cb61b14e68e2ab17c1c37c43a2f3f,0/8/08bcc0ac9015847ff2ca12017820311ba76fb616
-
 Q.idea/sonarlint/securityhotspotstore/a/8/a85a9c0c67fa0e2a77f6d0f1448fb126c61bbc18,d/6/d63791297bb6cdbdb0372216c45dcb6b4774af5e
 
 Q.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,1/0/10a03f31c4dce92cb371e761ce9429428bb6c176
-w
-G.idea/sonarlint/issuestore/3/f/3f70684581fd16ab3be77ca959e0138ef3ee8bfb,0/0/00861cac31c437dcc74bb945d3f67fd13dec49ef
 
 Q.idea/sonarlint/securityhotspotstore/f/2/f24b3455f0e88290fdcce8adc97a0e51cdb031fd,5/9/5907d0deb55df43c008809694698b875d55ddf9d
-w
-G.idea/sonarlint/issuestore/5/5/5545147ddef8ba341e646ddc20c3d3d456b3fe04,b/9/b9727cf9e8b93ffd9b83ab8d8bfe4e62379b4d27
 w
 G.idea/sonarlint/issuestore/6/1/61ebb9fd6e8cf9082658121d5d81e297791dacd0,b/2/b22f7e8090489b33880b9b9308cf7b19a9533f58
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
-w
-G.idea/sonarlint/issuestore/6/a/6ac6ae22bc13acb183dd52f3dc228a929fabc926,f/2/f22048f613fc539a2388da03da11ba6d1e071d5e
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 w
@@ -57,16 +37,8 @@ w
 G.idea/sonarlint/issuestore/f/2/f24b3455f0e88290fdcce8adc97a0e51cdb031fd,4/4/44e26d032b068e6c1dd22962b1f5633283508095
 ?
 next.config.mjs,d/f/df8bd0b91ecb778bf2a1b031c7677390c7442bb4
-T
-$components/PointsLogo/PointsLogo.css,8/7/877b1cd7af702e478fe1c93d17a888a4dca00969
 c
 3components/PointsLogo/shaders/vertexSimulation.glsl,6/c/6cb7158d90e5656ebd367e712d59e0790202acf2
-_
-/components/PointsLogo/shaders/vertexShader.glsl,7/e/7e6e6bd91c67c77399f4d01c4b051c5a5cedd0ef
-G
-components/main-nav.tsx,4/e/4eb1af970b0a18a6115c1f86ab121867e3894861
-T
-$components/PointsLogo/PointsLogo.jsx,d/3/d36a9c4071ff40e06b8794bd1b246aedbdc280e9
 e
 5components/PointsLogo/shaders/fragmentSimulation.glsl,5/a/5af6f4ee4917f862b3392f527283763e20207958
 ?
@@ -85,12 +57,6 @@ D
 components/icons.tsx,2/e/2e00cd9043e27bf1a3706dcc48a1f9ad73576333
 ?
 public/logo.svg,2/e/2ef8c18f4ecd42ee758cd134671b1d92eee8a6aa
-V
-&components/MovieCanvas/MovieCanvas.css,4/b/4b3b72fe0e157955be7d121f9c7df62d8097073c
->
-config/site.ts,e/3/e3817dda748e6b5b328347939adbbb640ddb0505
-J
-components/site-header.tsx,3/1/31d3a76b09984aa1d76fc172922806e5c088d4ed
 K
 components/theme-toggle.tsx,c/8/c8abfcf37520179ccd5216a669f850af617c2b1f
 U
@@ -104,3 +70,13 @@ L
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 B
 styles/globals.css,8/c/8c258232cbcd5d83991c524a9e86c8d3f984fc57
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+G
+components/main-nav.tsx,4/e/4eb1af970b0a18a6115c1f86ab121867e3894861
+J
+components/site-header.tsx,3/1/31d3a76b09984aa1d76fc172922806e5c088d4ed
+T
+$components/PointsLogo/PointsLogo.css,8/7/877b1cd7af702e478fe1c93d17a888a4dca00969
+T
+$components/PointsLogo/PointsLogo.jsx,d/3/d36a9c4071ff40e06b8794bd1b246aedbdc280e9

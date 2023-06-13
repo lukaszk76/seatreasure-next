@@ -1,0 +1,14 @@
+canvas {
+  display: block;
+
+}
+
+body {
+  overscroll-behavior: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#render-point {
+  margin-bottom: 100vh;
+}

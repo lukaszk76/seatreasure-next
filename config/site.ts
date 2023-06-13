@@ -9,6 +9,10 @@ export const siteConfig = {
       title: "Home",
       href: "/",
     },
+    {
+      title: "Gallery",
+      href: "/gallery",
+    },
   ],
   links: {
     twitter: "https://twitter.com/SeaTreasureBarbaraBialek",
