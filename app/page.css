@@ -21,6 +21,6 @@ body {
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
   color: white;
-  font-size: 5rem;
+  font-size: 7rem;
   -webkit-text-stroke: 1px black;
 }

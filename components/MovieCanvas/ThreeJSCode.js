@@ -6,11 +6,12 @@ import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass"
 import fragmentShader from "./glsl/fragment.glsl"
 import vertexShader from "./glsl/vertex.glsl"
 
-let imageRatio = 1024 / 590
+let imageRatio = 2 / 3
 
 async function getTexture() {
-  const video = document.getElementById("video")
-  return new THREE.VideoTexture(video)
+  // const video = document.getElementById("video")
+  return new THREE.TextureLoader().load("/leonardo9.png")
+  // return new THREE.VideoTexture(video)
 }
 function getScene() {
   return new THREE.Scene()

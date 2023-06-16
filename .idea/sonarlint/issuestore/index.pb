@@ -49,8 +49,6 @@ L
 components/Cursor/Cursor.css,1/a/1a52fca57736210eafdf59d32f1b9efa0d05c887
 Y
 )components/MovieCanvas/glsl/fragment.glsl,8/f/8fd445f04a6274b5ccf70e430694bab62bd8fc38
-a
-1components/PointsLogo/shaders/fragmentShader.glsl,f/8/f85eea092f1f798500222d45273d4cd89c71e712
 D
 components/icons.tsx,2/e/2e00cd9043e27bf1a3706dcc48a1f9ad73576333
 ?
@@ -74,11 +72,19 @@ $components/PointsLogo/PointsLogo.css,8/7/877b1cd7af702e478fe1c93d17a888a4dca00
 app/layout.tsx,e/e/ee80c90a95b380fdaa8bc6ba2190fbb3fdc30bb0
 <
 package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
-D
-app/gallery/page.tsx,4/a/4a0e8cd14616560d7d3357c8ccd38bec07b22c7c
-<
-app/page.tsx,6/f/6f76c4f4dad83442e836edc16c9735cb7bb32a73
 >
 config/site.ts,e/3/e3817dda748e6b5b328347939adbbb640ddb0505
 _
 /components/PointsLogo/shaders/vertexShader.glsl,7/e/7e6e6bd91c67c77399f4d01c4b051c5a5cedd0ef
+V
+&components/MovieCanvas/MovieCanvas.jsx,6/1/61196ddf7df552cb2548a6152f168d04ab2731a2
+V
+&components/MovieCanvas/MovieCanvas.css,4/b/4b3b72fe0e157955be7d121f9c7df62d8097073c
+B
+tailwind.config.js,0/9/0918cbb76f2c44f223706cec9d31a32cd1177ce4
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+T
+$components/PointsLogo/PointsLogo.jsx,d/3/d36a9c4071ff40e06b8794bd1b246aedbdc280e9
+O
+components/PointsLogo/Sketch.js,f/a/fa958154b3be43c19b4359331e9a91d4127695a6

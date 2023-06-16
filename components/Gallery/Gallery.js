@@ -24,18 +24,14 @@ export class Sketch {
     this.app.stage.addChild(this.stage)
 
     const textures = [
-      "/sea1.jpeg",
-      "/fishes.png",
-      "/sea2.jpeg",
-      "/fishes4.png",
-      "/fishes6.png",
-      "/octopus1.png",
-      "/sea3.jpeg",
-      "/fishes5.png",
-      "/sea4.jpeg",
-      "/sea5.jpeg",
-      "/sea6.jpeg",
-      "/sea7.jpeg",
+      "/leonardo1.png",
+      "/leonardo2.png",
+      "/leonardo3.png",
+      "/leonardo5.png",
+      "/leonardo6.png",
+      "/leonardo7.png",
+      "/leonardo8.png",
+      "/leonardo9.png",
     ]
 
     this.margin = 50

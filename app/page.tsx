@@ -34,7 +34,7 @@ export default function IndexPage() {
             id="points-logo-button"
             className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl"
           >
-            Sea Treasure
+            Nurkuj w Egipcie z Sea Treasure
           </h1>
           <p className="max-w-[700px] text-lg text-muted-foreground">
             Egipskie rafy koralowe to jedne z najpiękniejszych miejsc na
